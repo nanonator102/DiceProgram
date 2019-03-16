@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DiceProgram:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DiceProgram_jar</output-path>
+    <root id="archive" name="DiceProgram.jar">
+      <element id="module-output" name="DiceProgram" />
+    </root>
+  </artifact>
+</component>
