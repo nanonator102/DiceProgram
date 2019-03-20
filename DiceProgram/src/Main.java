@@ -28,7 +28,7 @@ public class Main {
         while (i < rolls) {
 
             i++; //Increments the variable 'i' by 1.
-            int randNum = rand.nextInt(sides); //Generates a random number between 0 and the number of sides -1.
+            int randNum = rand.nextInt(sides); //Generates a random number between 0 and the number of sides -1 E.g. if sides = 5 then randNum = 0 to 4
             randNum++;
             if(saveFile==2) {
                 System.out.println("Roll number " + (i) + " = " + randNum ); //Prints the roll number and and the number of the dice face.
@@ -46,9 +46,8 @@ public class Main {
             if (saveFile == 1) {
                 try {
                     PrintWriter writer = new PrintWriter("Dice.txt");
-                    while(i < rolls) {
+                    for(i=0; i < rolls; i++) {
                         writer.println(rollCollector[i]);
-                        i++;
                     }
                     writer.println(rollTotalPrint);
                     writer.close();
